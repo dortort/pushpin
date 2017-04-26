@@ -8,4 +8,6 @@ RUN \
 
 COPY ./routes /etc/pushpin/conf/
 
+ENV PARAMS --m --port 7999
+
 CMD ["sh", "-c", "/usr/bin/pushpin $PARAMS"]
